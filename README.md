@@ -54,16 +54,67 @@
 ## 📂 Directory Structure (Coming Soon)
 
 ```bash
-/public
-    index.php
-    /assets
-/src
-    /models
-    /controllers
-    /views
-/config
-    db.php
-    routes.php
+simple-taska/
+├── README.md
+├── public/
+│   ├── index.php
+│   ├── login.php
+│   ├── logout.php
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   │   └── app.js
+│   │   └── images/
+│   └── uploads/  # For baby photos, logbook images, etc.
+├── src/
+│   ├── controllers/
+│   │   ├── AuthController.php
+│   │   ├── AdminController.php
+│   │   ├── ManagerController.php
+│   │   ├── TeacherController.php
+│   │   ├── ParentController.php
+│   │   └── BabyController.php
+│   ├── models/
+│   │   ├── User.php
+│   │   ├── Taska.php
+│   │   ├── Baby.php
+│   │   ├── LogBook.php
+│   │   ├── Bill.php
+│   │   └── Calendar.php
+│   ├── views/
+│   │   ├── admin/
+│   │   │   ├── dashboard.php
+│   │   │   └── manage_taska.php
+│   │   ├── manager/
+│   │   │   ├── dashboard.php
+│   │   │   └── assign_calendar.php
+│   │   ├── teacher/
+│   │   │   ├── dashboard.php
+│   │   │   └── fill_logbook.php
+│   │   ├── parent/
+│   │   │   ├── dashboard.php
+│   │   │   └── view_logbook.php
+│   │   ├── auth/
+│   │   │   ├── login.php
+│   │   │   └── register.php
+│   │   └── shared/
+│   │       ├── header.php
+│   │       ├── footer.php
+│   │       └── navbar.php
+├── config/
+│   ├── db.php
+│   ├── mail.php
+│   └── routes.php
+├── database/
+│   ├── schema.sql
+│   └── seed.sql
+├── utils/
+│   ├── helpers.php
+│   ├── auth.php
+│   └── mailer.php
+└── .env.sample
+
 ````
 
 ---
